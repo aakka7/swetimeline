@@ -101,7 +101,7 @@ dataTable.addRows([
    [ 'Deliverables', 'P3 [tentative]',         doDate(2024,3,3,0,0),  doDate(2024,3,23,23,59) ],
    [ 'Deliverables', 'P4 [tentative]',         doDate(2024,3,24,0,0),  doDate(2024,4,12,23,59) ],
    [ 'Deliverables', 'P5 [tentative]',         doDate(2024,4,13,0,0),  doDate(2024,4,20,23,59) ],
-   [ 'Deliverables', 'W1 [tentative]',         doDate(2024,1,28,0,0),  doDate(2024,2,10,23,59) ],
+   [ 'Deliverables', 'W1',         doDate(2024,1,28,0,0),  doDate(2024,2,10,23,55) ],
    [ 'Deliverables', 'W2 (draft) [tentative]',         doDate(2024,2,11,0,0),   doDate(2024,2,24,23,59) ],
    [ 'Deliverables', 'W2 (final)  [tentative]',         doDate(2024,2,25,0,0),   doDate(2024,4,6,23,59) ],
    [ 'Deliverables', 'W3 [tentative]',         doDate(2024,4,7,0,0),   doDate(2024,4,27,23,59) ],
@@ -174,7 +174,7 @@ pattern: 'MMM dd, hh:mm a'
     else if(dataTable.getValue(i, 1) == "P5" || dataTable.getValue(i, 1) == "P5 [tentative]")
       tooltip += '<span>' + "P5: Testing deliverable" + '</span>';
     else if(dataTable.getValue(i, 1) == "W1" || dataTable.getValue(i, 1) == "W1 [tentative]")
-      tooltip += '<span>' + "Writing Assignment 1" + '</span>';
+      tooltip += '<span>' + "Writing Assignment 1 (Individual): Usability Evaluation" + '</span>';
     else if(dataTable.getValue(i, 1) == "W2 (final)" || dataTable.getValue(i, 1) == "W2 (final) [tentative]")
       tooltip += '<span>' + "Writing Assignment 2 (final)" + '</span>';
     else if(dataTable.getValue(i, 1) == "W2 (draft)" || dataTable.getValue(i, 1) == "W2 (draft) [tentative]")
