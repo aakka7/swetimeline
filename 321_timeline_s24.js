@@ -174,7 +174,7 @@ pattern: 'MMM dd, hh:mm a'
     else if(dataTable.getValue(i, 1) == "P5" || dataTable.getValue(i, 1) == "P5 [tentative]")
       tooltip += '<span>' + "P5: Testing deliverable" + '</span>';
     else if(dataTable.getValue(i, 1) == "W1" || dataTable.getValue(i, 1) == "W1 [tentative]")
-      tooltip += '<span>' + "Writing Assignment 1 (Individual): Usability Evaluation" + '</span>';
+      tooltip += '<span>' + "Writing Assignment 1 (Individual): Usability Evaluation " + '</span>';
     else if(dataTable.getValue(i, 1) == "W2 (final)" || dataTable.getValue(i, 1) == "W2 (final) [tentative]")
       tooltip += '<span>' + "Writing Assignment 2 (final)" + '</span>';
     else if(dataTable.getValue(i, 1) == "W2 (draft)" || dataTable.getValue(i, 1) == "W2 (draft) [tentative]")
