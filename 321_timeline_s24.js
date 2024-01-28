@@ -194,10 +194,6 @@ pattern: 'MMM dd, hh:mm a'
     else
       tooltip += '<span>' + dataTable.getValue(i, 1) + '</span>';
     tooltip += '</div><div>';
-    if(dataTable.getValue(i, 0) == "Quizzes")
-      tooltip += '<div> Quiz Topics: Listed in the Course Schedule</div>';
-    if(dataTable.getValue(i, 0) == "Labs")
-      tooltip += '<div> Lab Topics: Listed in the Course Schedule</div>';
     tooltip += '<span>' + dataTable.getValue(i, 0) + ':&nbsp;</span>';
     tooltip += formatDate.formatValue(dataTable.getValue(i, 3)) + ' - ';
     tooltip += formatDate.formatValue(dataTable.getValue(i, 4));
