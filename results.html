@@ -21,47 +21,45 @@
         h1 {
             color: #333333;
         }
-        table {
+        .recipe-block {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-column-gap: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        .recipe-image {
+            width: 150px;
+            height: 150px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .recipe-image img {
             width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
+            height: 100%;
+            object-fit: cover;
         }
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #dddddd;
-        }
-        th {
-            background-color: #A1BA9C;
+        .recipe-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
     </style>
 </head>
 <body>
     <div id="panel">
-        <h1>Search Results</h1>
-        <table>
-            <thead>
-                <tr>
-                    <th>Recipe</th>
-                    <th>Ingredients</th>
-                    <th>Additional Ingredients</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Placeholder rows for search results -->
-                <tr>
-                    <td>words</td>
-                    <td>words</td>
-                    <td>words</td>
-                </tr>
-                <tr>
-                    <td>words</td>
-                    <td>words</td>
-                    <td>words</td>
-                </tr>
-                <!-- Add more rows as needed -->
-            </tbody>
-        </table>
+        <h1>Found 'x' Results</h1>
+        <div class="recipe-block">
+            <div class="recipe-image">
+                <img src="placeholder_image.jpg" alt="Recipe Image">
+            </div>
+            <div class="recipe-details">
+                <h4>Food</h2>
+                <p>description</p>
+            </div>
+        </div>
+        <!-- turn into loop later -->
     </div>
 </body>
 </html>
